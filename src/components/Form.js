@@ -1,9 +1,23 @@
-import React from "react";
+
+import React, {useState} from "react";
+
+
+
 
 function Form(props) {
+    const [name, setName] = useState('');
+
+    function handleChange(e) {
+        setName(e.target.value);
+    }
+
     function handleSubmit(e) {
-        e.preventDefault();
-        alert('Hello,world!');
+        if (!name) return;
+        else { e.preventDefault();
+            props.addTask(name);
+            setName("");}
+       
+    
     }
     return ( <
         form onSubmit={handleSubmit}>
@@ -20,7 +34,9 @@ function Form(props) {
         id = "new-todo-input"
         className = "input input__lg"
         name = "text"
-        autoComplete = "off" /
+        autoComplete = "off"
+        value={name} 
+        onChange={handleChange}/
         >
         <
         button type = "submit"
