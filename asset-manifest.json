@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/moz-todo-react/static/css/main.b3a18f3d.css",
+    "main.js": "/moz-todo-react/static/js/main.f27c2923.js",
+    "index.html": "/moz-todo-react/index.html",
+    "main.b3a18f3d.css.map": "/moz-todo-react/static/css/main.b3a18f3d.css.map",
+    "main.f27c2923.js.map": "/moz-todo-react/static/js/main.f27c2923.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b3a18f3d.css",
+    "static/js/main.f27c2923.js"
+  ]
+}
